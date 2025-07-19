@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardano Cops HQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #002944;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header img {
+      max-width: 300px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #013f6d;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #ffffff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .gallery img, .cop-showcase img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .adventure-log, .meme-wall, .forms, .cop-showcase {
+      margin-bottom: 3rem;
+    }
+    footer {
+      text-align: center;
+      background-color: #013f6d;
+      color: white;
+      padding: 1rem;
+    }
+    form {
+      background: #ffffff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    form label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #013f6d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #025f9c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/cardano_hq.png" alt="Cardano Cops Headquarters" />
+    <h1>Cardano Cops HQ</h1>
+    <p>Chronicles of Justice on the Blockchain</p>
+  </header>
+
+    <div class="container">
+    <section id="adventures" class="adventure-log">
+      <h2>Cardano Cop Adventures</h2>
+      <p>Follow our fearless blockchain law enforcers as they clean up the memepool one criminal at a time!</p>
+      <ul>
+        <li><b>✅ The Great Rugpull Roundup</b></li>
+	<img src="images/Chase1.png" alt="Police Chase" />
+        <li><b>✅ Staking Station Saboteur Caught</b></li>
+        <img src="images/Arrest1.png" alt="Making the Arrest" />
+        		
+      </ul>
+    </section>
+
+    <section class="cop-showcase">
+      <h2>Meet the Cardano Cops</h2>
+      <p>Our heroes wear the Cardano logo with pride!</p>
+      <div class="gallery">
+	<p><h2>Deiplex- Chief of Police</h2></p>
+        <img src="images/Deiplex.png" alt="Deiplex" />
+	     
+      </div>
+    </section>
+
+    <section id="memes" class="meme-wall">
+      <h2>COP Meme Wall</h2>
+      <p>This is a community-driven project — powered by creativity, humor, and the Cardano community. Join the fun!</p>
+      <div class="gallery">
+        <img src="images/cop_meme1.png" alt="Cardano Cop Meme 1" />
+        <img src="images/cop_meme2.png" alt="Cardano Cop Meme 2" />
+        <!-- Add more meme images as needed -->
+      </div>
+    </section>
+    
+<section class="wanted-section">
+      <h2><B>Wanted for Crimes against the Community:</B></h2>
+      <div class="wanted-posters">
+        <div>
+          <p><h3>MARKET MANIPULATION</h3></p>
+	  <img src="images/WantedGary.png" alt="Wanted Poster - Gary Gensler" />
+          
+        </div>
+        <div>
+          <p><h3>RUG</h3></p>
+	  <img src="images/WantedDR.png" alt="Wanted Poster - Evil Doctor" />
+          
+        </div>
+        <div>
+          <p><h3>CROOKED DEV</h3></p>
+	  <img src="images/wantedhyena.png" alt="Wanted Poster - Hyena Coin" />
+        </div>
+      </div>
+    </section>
+
+    <section id="submit" class="forms">
+      <h2>Submit Your Own COP Meme</h2>
+      <form action="/submit-meme" method="POST" enctype="multipart/form-data">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="meme">Upload Meme</label>
+        <input type="file" id="meme" name="meme" accept="image/*" required>
+
+        <button type="submit">Submit Meme</button>
+      </form>
+
+      <h2>Submit an NFT Idea</h2>
+      <form action="/submit-nft" method="POST">
+        <label for="nftname">NFT Title</label>
+        <input type="text" id="nftname" name="nftname" required>
+
+        <label for="nftidea">Describe Your Idea</label>
+        <textarea id="nftidea" name="nftidea" rows="4" required></textarea>
+
+        <button type="submit">Submit Idea</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Cardano Cops. All Rights Reserved. Community Powered. Blockchain Inspired.
+  </footer>
+</body>
+</html>
